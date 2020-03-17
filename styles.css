@@ -99,4 +99,7 @@ a.big {
     .logo {
         width: calc(100% - 32px);
     }
+    .content {
+        margin-top: 64px;
+    }
 }
