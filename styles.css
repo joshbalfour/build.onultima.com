@@ -65,6 +65,12 @@ a.big {
     margin-top: 200px;
 }
 
+.content > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .content .logo {
     margin-bottom: 50px;
 }
@@ -96,10 +102,19 @@ a.big {
 }
 
 @media (max-width: 800px) {
-    .logo {
-        width: calc(100% - 32px);
-    }
     .content {
-        margin-top: 64px;
+        margin-top: 0;
+        height: 100vh;
+        justify-content: space-between;
+        padding-top: 64px;
+        padding-bottom: 32px;
+        box-sizing: border-box;
+    }
+    .content .logo {
+        width: calc(100% - 32px);
+        margin-bottom: 64px;
+    }
+    .content a.big {
+        margin-bottom: 32px;
     }
 }
