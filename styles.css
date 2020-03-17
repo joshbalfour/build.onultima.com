@@ -112,7 +112,7 @@ a.big {
         box-sizing: border-box;
     }
     .content .logo {
-        width: 100%;
+        width: calc(100% - 16px);
         margin-bottom: 64px;
     }
     .content a.big {
