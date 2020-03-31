@@ -270,6 +270,8 @@ p {
 .nav {
     height: 68px;
     display: flex;
+    background: #F9F9F9;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .nav .logo {
@@ -383,18 +385,42 @@ a.disabled {
     opacity: 0.1;
 }
 
-@media (prefers-color-scheme: dark) {
-   body {
-     background: #313131;
-     color: #F9F9F9;
-   }
-   .ready, .nav {
-    background: #191919;
-   }
+.usps {
+    display: flex;
+    margin-top: 32px;
+}
 
-   .nav a, .link-list a {
+.usps li:not(:first-of-type) {
+    margin-left: 65px;
+}
+
+.usps li {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 155.5%;
+    /* identical to box height, or 22px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.025em;
+}
+.usps li svg {
+    margin-right: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #313131;
         color: #F9F9F9;
-   }
+    }
+    .ready, .nav {
+        background: #191919;
+    }
+
+    .nav a, .link-list a {
+        color: #F9F9F9;
+    }
 
     .logo-img {
         background-image: url('logo-circle-white.svg');
