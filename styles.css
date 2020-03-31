@@ -206,7 +206,7 @@ p {
 }
 
 .button:hover {
-    background: rgb(240, 240, 240);
+    background: rgba(249, 249, 249, 0.85);
 }
 
 .grid {
