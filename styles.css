@@ -117,7 +117,7 @@ html { font-family: 'Inter', sans-serif; }
 }
   
 
-body {
+body, a {
     color: #181818;
 }
 
@@ -391,7 +391,7 @@ a.disabled {
 }
 
 .usps li:not(:first-of-type) {
-    margin-left: 65px;
+    margin-left: 51px;
 }
 
 .usps li {
@@ -412,6 +412,9 @@ a.disabled {
 @media (prefers-color-scheme: dark) {
     body {
         background: #313131;
+        color: #F9F9F9;
+    }
+    a {
         color: #F9F9F9;
     }
     .ready, .nav {
